@@ -33,7 +33,7 @@ if ( etaUtente < 18 ) {
 }
 
 //prezzo finale
-prezzoFinale = prezzoBiglietto.toFixed(2)
+var prezzoFinale = prezzoBiglietto.toFixed(2)
 
 var messaggio = ' Il prezzo finale è: ' + prezzoFinale + '€';
 
