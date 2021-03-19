@@ -18,6 +18,8 @@ var etaUtenteNumero = parseInt(chilometriUtente);
 console.log(etaUtenteNumero);
 
 //prezzo biglietto (0.21€ al km)
+var prezzoBiglietto = chilometriUtenteNumero * 0.21;
+console.log(prezzoBiglietto);
 
 //età inferiore a 18 anni, sconto del 20%
 
