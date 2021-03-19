@@ -11,6 +11,11 @@ var chilometriUtenteNumero = parseInt(chilometriUtente);
 console.log(chilometriUtenteNumero);
 
 //età del passeggero
+var etaUtente = prompt( ' Quanti anni hai? ' );
+console.log(etaUtente);
+
+var etaUtenteNumero = parseInt(chilometriUtente);
+console.log(etaUtenteNumero);
 
 //prezzo biglietto (0.21€ al km)
 
