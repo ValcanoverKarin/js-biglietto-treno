@@ -22,7 +22,17 @@ var prezzoBiglietto = chilometriUtenteNumero * 0.21;
 console.log(prezzoBiglietto);
 
 //età inferiore a 18 anni, sconto del 20%
+var scontoMinorenni = prezzoBiglietto * 20 / 100;
+console.log(scontoMinorenni);
+
+var totaleMinorenni = prezzoBiglietto - scontoMinorenni;
+console.log(totaleMinorenni);
 
 //età superiore ai 65 anni, sconto del 40%
+var scontoOver = prezzoBiglietto * 40 / 100;
+console.log(scontoOver);
+
+var totaleOver = prezzoBiglietto - scontoOver;
+console.log(totaleOver);
 
 //prezzo finale
