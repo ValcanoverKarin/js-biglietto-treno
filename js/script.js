@@ -5,34 +5,32 @@
 
 //chilometri che vuole percorrere l'utente
 var chilometriUtente = prompt( ' Quanti chilometri vuoi percorrere? ' );
-console.log(chilometriUtente);
+//console.log(chilometriUtente);
 
 var chilometriUtenteNumero = parseInt(chilometriUtente);
-console.log(chilometriUtenteNumero);
+//console.log(chilometriUtenteNumero);
 
 //età del passeggero
 var etaUtente = prompt( ' Quanti anni hai? ' );
-console.log(etaUtente);
+//console.log(etaUtente);
 
 var etaUtenteNumero = parseInt(chilometriUtente);
-console.log(etaUtenteNumero);
+//console.log(etaUtenteNumero);
 
 //prezzo biglietto (0.21€ al km)
 var prezzoBiglietto = chilometriUtenteNumero * 0.21;
-console.log(prezzoBiglietto);
+//console.log(prezzoBiglietto);
 
 //età inferiore a 18 anni, sconto del 20%
-var scontoMinorenni = prezzoBiglietto * 20 / 100;
-console.log(scontoMinorenni);
-
-var totaleMinorenni = prezzoBiglietto - scontoMinorenni;
-console.log(totaleMinorenni);
-
-//età superiore ai 65 anni, sconto del 40%
-var scontoOver = prezzoBiglietto * 40 / 100;
-console.log(scontoOver);
-
-var totaleOver = prezzoBiglietto - scontoOver;
-console.log(totaleOver);
+if ( etaUtente < 18 ) {
+    prezzoBiglietto = prezzoBiglietto - ( prezzoBiglietto * 20 / 100 );
+//età superiore ai 65 anni, sconto del 40%    
+} else if ( etaUtente > 65 ) {
+    prezzoBiglietto = prezzoBiglietto - ( prezzoBiglietto * 40 / 100 );
+//età restanti   
+} else {
+    prezzoBiglietto = prezzoBiglietto
+}
 
 //prezzo finale
+document.getElementById('biglietto_finale').innerHTML = prezzoBiglietto.toFixed(2);
