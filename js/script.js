@@ -4,3 +4,18 @@
 //L'output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo).
 
 //chilometri che vuole percorrere l'utente
+var chilometriUtente = prompt( ' Quanti chilometri vuoi percorrere? ' );
+console.log(chilometriUtente);
+
+var chilometriUtenteNumero = parseInt(chilometriUtente);
+console.log(chilometriUtenteNumero);
+
+//età del passeggero
+
+//prezzo biglietto (0.21€ al km)
+
+//età inferiore a 18 anni, sconto del 20%
+
+//età superiore ai 65 anni, sconto del 40%
+
+//prezzo finale
